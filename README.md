@@ -1,17 +1,14 @@
-
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-US">
-  
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <title>Sydney Sobomabo | WDD 130</title>
-  <meta name="description" content="Sydney Sobomabo's BYU- WDD 130 course home page">
-
-  <link rel="stylessheet" href="styles/styles.css">
+  <meta name="description" content="Sydney Sobomabo's BYU-Idaho WDD130 Course Home page">
+  <link rel="stylesheet" href="style.css">
 </head>
 
-</body>
+<body>
   <header>
     <nav>
       <a href="#">Home</a>
@@ -34,4 +31,7 @@
     <p>©2024</p> ❀ Sydney Sobomabo ❀ Rivers, Nigeria</p>
   </footer>
 </body>
+
 </html>
+
+
