@@ -11,24 +11,24 @@ nav a {
 
 h1 {
   color: steelblue;
-}
+}  
 
-img {
+main img {
     width: 150px;
     height: auto;
     border: 1px solid steelblue;
     padding: 2px;
-    box-shadow: 0 0 30px #333;
+    box-shadow: 0 0 30px gray;
 }
 
 p {
-    padding: 10px 10px 10px 10px;
+    padding: 0;
 }
   
 aside {
     width: 20em;
     margin: 1em;
-    border: 1px solid rgba(0, 0, 0, 0,2); /* why use rgba istead of hec here? */
+    border: 1px solid rgba(0, 0, 0, 0.2); /* why use rgba istead of hec here? */
     padding: 1em;
     background-color: #eee;
     color: #333;
