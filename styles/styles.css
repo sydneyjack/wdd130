@@ -9,12 +9,12 @@ nav a {
     padding: 20px;
 }
 
-h1 {
-    color: darkblue;
-}
-
 main {
     max-width: 800px;
+}
+
+h1 {
+    color: darkblue;
 }
 
 img {
@@ -25,8 +25,12 @@ img {
     box-shadow: 0 0 30px gray;
 }
 
-p {
-    padding: 0;
+main img {
+    width: 150px;
+    height: auto;
+    border: 1px solid black;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
 }
 
 aside {
@@ -34,13 +38,17 @@ aside {
     margin: 20px;
     border: 1px solid gray;
     padding: 10px;
-    background-color: #f0f0f0;
+    background-color: #eee;
     color: black;
 }
 
 aside img {
     width: 200px;
     height: auto;
+}
+
+p {
+    padding: 0;
 }
 
 footer {
