@@ -1,13 +1,24 @@
-* {
+/* RESET */
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* VARIABLES */
+:root {
+    --primary-color: #000;
+    --secondary-color: #fff;
+}
+
+/* BODY */
 body {
     font-family: Arial, sans-serif;
 }
 
+/* HEADER */
 header {
     display: flex;
     justify-content: space-between;
@@ -18,9 +29,10 @@ header {
 nav a {
     margin: 10px;
     text-decoration: none;
-    color: black;
+    color: var(--primary-color);
 }
 
+/* HERO */
 .hero {
     position: relative;
 }
@@ -33,7 +45,9 @@ nav a {
     position: absolute;
     top: 20px;
     left: 20px;
-    color: white;
+    color: var(--secondary-color);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
 }
 
 .hero article {
@@ -42,12 +56,21 @@ nav a {
     left: 20px;
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px;
+    max-width: 300px;
 }
 
+/* REQUIRED FIX */
+.hero article img {
+    float: right;
+    margin-left: 10px;
+}
+
+/* HISTORY */
 .history {
     padding: 20px;
 }
 
+/* ADVENTURES */
 .adventures {
     display: flex;
     justify-content: space-around;
@@ -58,7 +81,12 @@ figure img {
     width: 150px;
 }
 
+/* FOOTER */
 footer {
     margin-top: 20px;
     text-align: center;
+}
+
+.socialmedia a {
+    text-decoration: none;
 }
