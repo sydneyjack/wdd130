@@ -1,16 +1,31 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
 :root {
     --primary-color: #1b4965;
     --secondary-color: #62b6cb;
     --accent-color: #cae9ff;
-    --text-color: #333;
+    --text-color: #333333;
 }
 
+/* BODY */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--text-color);
+}
+
+/* HEADER */
 header {
     display: grid;
     grid-template-columns: 150px 1fr;
     align-items: center;
     background-color: var(--primary-color);
-    padding: 10px;
+    padding: 10px 20px;
 }
 
 header img {
@@ -29,41 +44,59 @@ nav a {
     font-weight: bold;
 }
 
+/* HERO */
 .hero {
     position: relative;
 }
 
 .hero img {
     width: 100%;
-    display: block;
+    height: 450px;
+    object-fit: cover;
 }
 
+/* TITLE */
 .hero h1 {
     position: absolute;
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.6);
     color: white;
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 10px 20px;
+    border-radius: 6px;
 }
 
+/* FIXED ARTICLE (THIS IS THE MAIN FIX) */
 .hero article {
     position: absolute;
-    bottom: 20px;
-    left: 20px;
-    right: 20px;
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 15px;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    /* controls size */
+    max-width: 800px;
+    /* prevents stretching */
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
 }
 
+/* IMAGE INSIDE ARTICLE */
 .hero article img {
     float: right;
-    width: 120px;
-    margin-left: 10px;
+    width: 140px;
+    margin-left: 15px;
     border-radius: 8px;
 }
 
+/* MAIN */
+main {
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* HISTORY */
 .history {
     padding: 40px;
     text-align: center;
@@ -77,17 +110,20 @@ nav a {
     border-radius: 10px;
 }
 
+/* ADVENTURES */
 .adventures {
     padding: 40px;
     text-align: center;
 }
 
+/* FIXED GALLERY (THIS FIXES OVERLAP) */
 .adventure-gallery {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     gap: 15px;
 }
 
+/* IMAGES */
 .adventure-gallery img {
     width: 100%;
     height: 150px;
@@ -95,20 +131,17 @@ nav a {
     border-radius: 8px;
 }
 
+/* FIGURE */
 figure {
-    width: 18%;
+    text-align: center;
 }
 
-figcaption {
-    margin-top: 5px;
-    font-size: 14px;
-}
-
+/* FOOTER */
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
+    padding: 15px 20px;
     background-color: var(--primary-color);
     color: white;
 }
