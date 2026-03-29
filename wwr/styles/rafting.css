@@ -1,5 +1,7 @@
 /* RESET */
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -26,6 +28,8 @@ header {
     align-items: center;
     background-color: var(--primary-color);
     padding: 10px;
+    color: white;
+    /* ✅ FIXED contrast */
 }
 
 header img {
@@ -51,6 +55,14 @@ nav a {
     position: relative;
 }
 
+/* Optional overlay for better contrast */
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.3);
+}
+
 .hero img {
     width: 100%;
     display: block;
@@ -61,6 +73,9 @@ nav a {
     top: 20px;
     left: 20px;
     color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* ✅ FIXED visibility */
+    padding: 10px;
 }
 
 .hero article {
@@ -70,6 +85,7 @@ nav a {
     background-color: var(--secondary-color);
     padding: 10px;
     max-width: 400px;
+    color: var(--text-color);
 }
 
 .hero article img {
@@ -96,6 +112,7 @@ nav a {
     display: flex;
     justify-content: space-around;
     padding: 20px;
+    background-color: white;
 }
 
 .adventures figure {
