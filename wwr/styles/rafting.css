@@ -1,3 +1,11 @@
+/* RESET (REQUIRED) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES (ALL USED) */
 :root {
     --primary-color: #1b4965;
     --secondary-color: #62b6cb;
@@ -5,22 +13,32 @@
     --text-color: #333;
 }
 
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+}
+
+/* HEADER (GRID) */
 header {
     display: grid;
     grid-template-columns: 150px 1fr;
     align-items: center;
     background-color: var(--primary-color);
-    padding: 10px;
+    padding: 15px 30px;
+    color: white;
+    /* FIXES CONTRAST */
 }
 
 header img {
     width: 100px;
 }
 
+/* NAV (FLEX) */
 nav {
     display: flex;
     justify-content: flex-end;
-    gap: 20px;
+    gap: 25px;
 }
 
 nav a {
@@ -29,13 +47,15 @@ nav a {
     font-weight: bold;
 }
 
+/* HERO */
 .hero {
     position: relative;
 }
 
 .hero img {
     width: 100%;
-    display: block;
+    height: 400px;
+    object-fit: cover;
 }
 
 .hero h1 {
@@ -43,7 +63,7 @@ nav a {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.6);
     color: white;
     padding: 10px 20px;
 }
@@ -53,39 +73,49 @@ nav a {
     bottom: 20px;
     left: 20px;
     right: 20px;
-    background-color: rgba(255, 255, 255, 0.85);
+    background: rgba(255, 255, 255, 0.9);
     padding: 15px;
 }
 
-.hero article img {
-    float: right;
-    width: 120px;
-    margin-left: 10px;
-    border-radius: 8px;
-}
-
+/* HISTORY */
 .history {
     padding: 40px;
-    text-align: center;
     background-color: var(--accent-color);
+    text-align: center;
 }
 
-.history img {
-    width: 300px;
-    margin: 20px auto;
-    display: block;
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.history-content img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
     border-radius: 10px;
 }
 
+/* ADVENTURES */
 .adventures {
     padding: 40px;
     text-align: center;
+    background-color: var(--secondary-color);
+    /* USES VARIABLE */
 }
 
 .adventure-gallery {
     display: flex;
-    justify-content: space-between;
     gap: 15px;
+    margin-top: 20px;
+}
+
+figure {
+    flex: 1;
 }
 
 .adventure-gallery img {
@@ -95,22 +125,19 @@ nav a {
     border-radius: 8px;
 }
 
-figure {
-    width: 18%;
-}
-
 figcaption {
     margin-top: 5px;
     font-size: 14px;
 }
 
+/* FOOTER */
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px;
     background-color: var(--primary-color);
     color: white;
+    padding: 15px 30px;
 }
 
 .socialmedia {
@@ -120,5 +147,4 @@ footer {
 
 .socialmedia img {
     width: 30px;
-    height: 30px;
 }
