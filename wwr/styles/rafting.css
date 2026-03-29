@@ -1,11 +1,3 @@
-/* RESET */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* VARIABLES */
 :root {
     --primary-color: #1b4965;
     --secondary-color: #62b6cb;
@@ -13,30 +5,22 @@
     --text-color: #333;
 }
 
-/* BODY */
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    color: var(--text-color);
-}
-
-/* HEADER (GRID ✅) */
 header {
     display: grid;
     grid-template-columns: 150px 1fr;
     align-items: center;
-    background: var(--primary-color);
-    padding: 15px 30px;
+    background-color: var(--primary-color);
+    padding: 10px;
 }
 
 header img {
     width: 100px;
 }
 
-/* NAV (FLEX ✅) */
 nav {
     display: flex;
     justify-content: flex-end;
-    gap: 25px;
+    gap: 20px;
 }
 
 nav a {
@@ -45,15 +29,13 @@ nav a {
     font-weight: bold;
 }
 
-/* HERO */
 .hero {
     position: relative;
 }
 
 .hero img {
     width: 100%;
-    height: 450px;
-    object-fit: cover;
+    display: block;
 }
 
 .hero h1 {
@@ -61,7 +43,7 @@ nav a {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
     padding: 10px 20px;
 }
@@ -71,7 +53,7 @@ nav a {
     bottom: 20px;
     left: 20px;
     right: 20px;
-    background: rgba(255, 255, 255, 0.9);
+    background-color: rgba(255, 255, 255, 0.85);
     padding: 15px;
 }
 
@@ -79,45 +61,31 @@ nav a {
     float: right;
     width: 120px;
     margin-left: 10px;
+    border-radius: 8px;
 }
 
-/* HISTORY (THIS FIXES YOUR LAYOUT ISSUE) */
 .history {
-    padding: 50px;
-    background: var(--accent-color);
-}
-
-.history h2 {
+    padding: 40px;
     text-align: center;
-    margin-bottom: 20px;
-}
-
-/* GRID FIX */
-.history-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    gap: 30px;
+    background-color: var(--accent-color);
 }
 
 .history img {
-    width: 100%;
+    width: 300px;
+    margin: 20px auto;
+    display: block;
     border-radius: 10px;
 }
 
-/* ADVENTURES */
 .adventures {
-    padding: 50px;
+    padding: 40px;
     text-align: center;
 }
 
 .adventure-gallery {
     display: flex;
+    justify-content: space-between;
     gap: 15px;
-}
-
-figure {
-    flex: 1;
 }
 
 .adventure-gallery img {
@@ -127,18 +95,22 @@ figure {
     border-radius: 8px;
 }
 
-figcaption {
-    margin-top: 5px;
+figure {
+    width: 18%;
 }
 
-/* FOOTER */
+figcaption {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
 footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: var(--primary-color);
+    padding: 15px;
+    background-color: var(--primary-color);
     color: white;
-    padding: 15px 30px;
 }
 
 .socialmedia {
@@ -148,4 +120,5 @@ footer {
 
 .socialmedia img {
     width: 30px;
+    height: 30px;
 }
