@@ -61,18 +61,18 @@
                         <p class="purpose-title">Message Purpose</p>
 
                         <div class="purpose-options">
-                            <label>
+                            <label for="general">
                                 <input type="radio" id="general" name="purpose" value="general">
                                 General Inquiry
                             </label>
 
-                            <label>
+                            <label for="reservation">
                                 <input type="radio" id="reservation" name="purpose"
                                   value="reservation">
                                 Reservation Question
                             </label>
 
-                            <label>
+                            <label for="suggestion">
                                 <input type="radio" id="suggestion" name="purpose"
                                   value="suggestion">
                                 Website Suggestion
@@ -84,8 +84,10 @@
                     <label for="message">Message</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
 
-                    <input type="checkbox" id="subscribe" name="subscribe">
-                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                    <label for="subscribe">
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                        Please subscribe me to the monthly newsletter
+                    </label>
 
                     <button type="submit">Get in Touch!</button>
 
