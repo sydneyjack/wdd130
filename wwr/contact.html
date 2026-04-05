@@ -28,77 +28,80 @@
         <h1>Contact White Water Rafting</h1>
 
         <!-- COMPANY INFO -->
-        <section>
-            <h2>Contact Information</h2>
-            <p><strong>Address:</strong> 123 River Road, Utah, USA</p>
-            <p><strong>Phone:</strong> +1 234 567 890</p>
-            <p><strong>Email:</strong> info@whitewaterrafting.com</p>
+        <section class="contact-info">
+            <h2>White Water Rafting Company</h2>
+            <p>123 Main River Street</p>
+            <p>Kolob, California</p>
+            <p>+1 999 999 9999</p>
+            <p>info@whitewater.com</p>
+        </section>
 
-            <!-- FIXED IFRAME (no width="100%") -->
-            <iframe src="https://www.google.com/maps?q=utah%20river%20rafting&output=embed"
-              height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
+        <!-- MAP + FORM -->
+        <section class="contact-layout">
+
+            <!-- MAP -->
+            <div class="map">
+                <iframe src="https://www.google.com/maps?q=utah%20river%20rafting&output=embed"
+                  height="300" loading="lazy">
+                </iframe>
+            </div>
+
+            <!-- FORM -->
+            <div class="contact-form">
+                <form>
+
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <p>Purpose of Message</p>
+
+                    <label><input type="radio" name="purpose" value="general"> General
+                        Inquiry</label>
+                    <label><input type="radio" name="purpose" value="reservation"> Reservation
+                        Question</label>
+                    <label><input type="radio" name="purpose" value="suggestion"> Website
+                        Suggestion</label>
+
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+
+                    <label>
+                        <input type="checkbox" name="subscribe">
+                        Please subscribe me to the monthly newsletter
+                    </label>
+
+                    <button type="submit">Get in Touch!</button>
+
+                </form>
+            </div>
+
         </section>
 
         <!-- EMPLOYEES -->
-        <section>
-            <h2>Meet Our Team</h2>
+        <section class="employees">
+            <h2>We Are Here to Serve You</h2>
 
-            <figure>
-                <img src="images/rafting1.jpg" alt="Lead rafting guide">
-                <figcaption>John – Lead Guide</figcaption>
-            </figure>
+            <div class="employee-gallery">
 
-            <figure>
-                <img src="images/rafting2.jpg" alt="Adventure rafting instructor">
-                <figcaption>Sarah – Instructor</figcaption>
-            </figure>
+                <figure>
+                    <img src="images/John.jpg" alt="Lead rafting guide">
+                    <figcaption>John – Lead Guide</figcaption>
+                </figure>
 
-            <figure>
-                <img src="images/rafting3.jpg" alt="Rafting expedition leader">
-                <figcaption>Mike – Expedition Leader</figcaption>
-            </figure>
+                <figure>
+                    <img src="images/Sarah.jpg" alt="Adventure rafting instructor">
+                    <figcaption>Sarah – Instructor</figcaption>
+                </figure>
 
-        </section>
+                <figure>
+                    <img src="images/Mike.jpg" alt="Rafting expedition leader">
+                    <figcaption>Mike – Expedition Leader</figcaption>
+                </figure>
 
-        <!-- FORM -->
-        <section>
-            <h2>Send Us a Message</h2>
-
-            <form>
-
-                <!-- NAME -->
-                <label for="name">Full Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <!-- EMAIL -->
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" required>
-
-                <!-- RADIO OPTIONS (FIXED IDs) -->
-                <p>Purpose of Message:</p>
-
-                <input type="radio" id="general" name="purpose" value="general">
-                <label for="general">General Inquiry</label>
-
-                <input type="radio" id="reservation" name="purpose" value="reservation">
-                <label for="reservation">Reservation Question</label>
-
-                <input type="radio" id="suggestion" name="purpose" value="suggestion">
-                <label for="suggestion">Website Suggestion</label>
-
-                <!-- TEXTAREA (ADDED — THIS WAS MISSING) -->
-                <label for="message">Your Message:</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-
-                <!-- CHECKBOX (FIXED ID) -->
-                <input type="checkbox" id="subscribe" name="subscribe">
-                <label for="subscribe">Please subscribe me to the monthly newsletter</label>
-
-                <!-- BUTTON -->
-                <button type="submit">Send Message</button>
-
-            </form>
+            </div>
         </section>
 
     </main>

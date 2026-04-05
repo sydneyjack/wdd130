@@ -151,63 +151,21 @@ footer {
     width: 30px;
 }
 
-/* CONTACT PAGE */
-
-.contact-info {
+.contact-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
     padding: 40px;
-    text-align: center;
 }
 
-.map {
-    margin-top: 20px;
+.map iframe {
+    width: 100%;
+    border: none;
 }
 
 .employees {
-    padding: 40px;
-    text-align: center;
-}
-
-.employee-gallery {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-}
-
-.employee-gallery img {
-    width: 200px;
-    height: auto;
-    border-radius: 10px;
-}
-
-.contact-form {
-    padding: 40px;
-    background-color: var(--accent-color);
-}
-
-form {
-    max-width: 600px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-input,
-textarea {
-    padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-button {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-button:hover {
-    opacity: 0.9;
+    margin: 40px;
+    padding: 20px;
+    text-align: center;
 }
