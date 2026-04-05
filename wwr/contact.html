@@ -1,116 +1,159 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-US">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Contact Us | White Water Rafting</title>
+
     <meta name="description"
-      content="Contact White Water Rafting for reservations, questions, and adventure inquiries.">
+      content="Contact White Water Rafting for reservations, questions, and adventure trip information.">
     <meta name="author" content="Sobomabo Boma Sydney">
+
     <link rel="stylesheet" href="styles/rafting.css">
+
 </head>
 
 <body>
 
     <header>
+
         <img src="images/whitewaterlogo.png" alt="Rafting Logo">
+
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="trips.html">Trips</a>
             <a href="contact.html">Contact Us</a>
         </nav>
+
     </header>
 
     <main>
 
-        <h1>Contact Us</h1>
+        <h1>Contact White Water Rafting</h1>
 
-        <!-- Company Info -->
-        <section>
+        <section class="contact-info">
+
             <h2>Company Information</h2>
-            <p><strong>Address:</strong> 123 River Lane, Adventure City</p>
-            <p><strong>Phone:</strong> +234 800 123 4567</p>
+
+            <p><strong>Address:</strong> 123 River Canyon Road, Adventure Valley, UT 84000</p>
+
+            <p><strong>Phone:</strong> +1 (801) 555-RAFT</p>
+
             <p><strong>Email:</strong> info@whitewaterrafting.com</p>
 
-            <iframe src="https://www.google.com/maps?q=Lagos&output=embed">
-            </iframe>
+            <div class="map">
+
+                <iframe src="https://www.google.com/maps?q=utah%20river%20rafting&output=embed"
+                  width="100%" height="300" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+
+            </div>
+
         </section>
 
-        <!-- Employees -->
-        <section>
+
+        <section class="employees">
+
             <h2>Meet Our Team</h2>
-            <figure>
-                <img src="images/rafting1.jpg" alt="Guide John">
-                <figcaption>John – Lead Guide</figcaption>
-            </figure>
 
-            <figure>
-                <img src="images/rafting2.jpg" alt="Instructor Sarah">
-                <figcaption>Sarah – Safety Instructor</figcaption>
-            </figure>
+            <div class="employee-gallery">
 
-            <figure>
-                <img src="images/rafting3.jpg" alt="Manager Mike">
-                <figcaption>Mike – Operations Manager</figcaption>
-            </figure>
+                <figure>
+                    <img src="images/happyclient.jpg" alt="Lead rafting guide">
+                    <figcaption>John Carter – Lead Guide</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/rafting2.jpg" alt="Adventure rafting instructor">
+                    <figcaption>Maria Lopez – Safety Instructor</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="images/rafting3.jpg" alt="Rafting expedition leader">
+                    <figcaption>David Smith – Expedition Leader</figcaption>
+                </figure>
+
+            </div>
+
         </section>
 
-        <!-- FORM (FIXED) -->
-        <section>
+
+        <section class="contact-form">
+
             <h2>Send Us a Message</h2>
 
             <form>
 
-                <!-- Name -->
                 <label for="name">Full Name</label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" required>
 
-                <!-- Email -->
+
                 <label for="email">Email Address</label>
-                <input type="email" id="email" name="email">
+                <input type="email" id="email" name="email" required>
 
-                <fieldset>
-                    <legend>Purpose of Message</legend>
 
-                    <label for="general">
-                        <input type="radio" id="general" name="purpose" value="general">
-                        General Inquiry
-                    </label>
+                <p>Purpose of Message</p>
 
-                    <label for="reservation">
-                        <input type="radio" id="reservation" name="purpose" value="reservation">
-                        Reservation Question
-                    </label>
+                <label>
+                    <input type="radio" name="purpose" value="general">
+                    General Inquiry
+                </label>
 
-                    <label for="suggestion">
-                        <input type="radio" id="suggestion" name="purpose" value="suggestion">
-                        Website Suggestion
-                    </label>
-                </fieldset>
+                <label>
+                    <input type="radio" name="purpose" value="reservation">
+                    Reservation Question
+                </label>
 
-                <label for="subscribe">
-                    <input type="checkbox" id="subscribe" name="subscribe">
+                <label>
+                    <input type="radio" name="purpose" value="suggestion">
+                    Website Suggestion
+                </label>
+
+
+                <label for="message">Your Message</label>
+
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+
+                <label class="newsletter">
+                    <input type="checkbox" name="subscribe">
                     Please subscribe me to the monthly newsletter
                 </label>
 
-                <!-- Button -->
-                <button type="submit">Send Message</button>
+
+                <button type="submit">Send My Message</button>
 
             </form>
+
         </section>
 
     </main>
 
+
     <footer>
+
         <p>©2026 White Water Rafting | Sobomabo Boma Sydney</p>
 
         <nav class="socialmedia">
-            <a href="#"><img src="images/facebook.jpg" alt="Facebook icon"></a>
-            <a href="#"><img src="images/instagram.jpg" alt="Instagram icon"></a>
-            <a href="#"><img src="images/xlogo.png" alt="X social media icon"></a>
+
+            <a href="https://facebook.com">
+                <img src="images/facebook.jpg" alt="Facebook icon">
+            </a>
+
+            <a href="https://instagram.com">
+                <img src="images/instagram.jpg" alt="Instagram icon">
+            </a>
+
+            <a href="https://x.com">
+                <img src="images/xlogo.png" alt="X social media icon">
+            </a>
+
         </nav>
+
     </footer>
 
 </body>
