@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ✅ TITLE FIX -->
+    <title>Contact Us | White Water Rafting</title>
+
+    <!-- ✅ META DESCRIPTION FIX -->
+    <meta name="description"
+      content="Contact White Water Rafting for reservations, questions, and adventure inquiries.">
+    <meta name="author" content="Sobomabo Boma Sydney">
+
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="images/whitewaterlogo.png" alt="Rafting Logo">
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Contact Us</h1>
+
+        <!-- ✅ COMPANY INFO -->
+        <section class="contact-info">
+            <h2>Company Information</h2>
+            <p><strong>Address:</strong> 123 River Lane, Adventure City</p>
+            <p><strong>Phone:</strong> +234 800 123 4567</p>
+            <p><strong>Email:</strong> info@whitewaterrafting.com</p>
+
+            <!-- ✅ GOOGLE MAP (NO inline style) -->
+            <iframe src="https://www.google.com/maps?q=lagos&output=embed">
+            </iframe>
+        </section>
+
+        <!-- ✅ EMPLOYEES -->
+        <section class="employees">
+            <h2>Meet Our Team</h2>
+
+            <figure>
+                <img src="images/rafting1.jpg" alt="Guide John">
+                <figcaption>John – Lead Guide</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/rafting2.jpg" alt="Instructor Sarah">
+                <figcaption>Sarah – Safety Instructor</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/rafting3.jpg" alt="Manager Mike">
+                <figcaption>Mike – Operations Manager</figcaption>
+            </figure>
+        </section>
+
+        <!-- ✅ FORM -->
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+
+            <form>
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <p>Purpose of Message:</p>
+
+                <label><input type="radio" name="purpose" value="general" required> General
+                    Inquiry</label>
+                <label><input type="radio" name="purpose" value="reservation"> Reservation
+                    Question</label>
+                <label><input type="radio" name="purpose" value="suggestion"> Website
+                    Suggestion</label>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <label>
+                    <input type="checkbox" name="subscribe">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <!-- ✅ GOOD BUTTON TEXT -->
+                <button type="submit">Send Message</button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>©2026 White Water Rafting | Sobomabo Boma Sydney</p>
+
+        <nav class="socialmedia">
+            <a href="#"><img src="images/facebook.jpg" alt="Facebook icon"></a>
+            <a href="#"><img src="images/instagram.jpg" alt="Instagram icon"></a>
+            <a href="#"><img src="images/xlogo.png" alt="X social media icon"></a>
+        </nav>
+    </footer>
+
+</body>
+
+</html>
