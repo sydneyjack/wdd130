@@ -56,22 +56,36 @@
                     <label for="email">Email Address</label>
                     <input type="email" id="email" name="email" required>
 
-                    <p>Purpose of Message</p>
+                    <div class="purpose-group">
 
-                    <label><input type="radio" name="purpose" value="general"> General
-                        Inquiry</label>
-                    <label><input type="radio" name="purpose" value="reservation"> Reservation
-                        Question</label>
-                    <label><input type="radio" name="purpose" value="suggestion"> Website
-                        Suggestion</label>
+                        <p class="purpose-title">Message Purpose</p>
 
-                    <label for="message">Your Message</label>
+                        <div class="purpose-options">
+                            <label>
+                                <input type="radio" id="general" name="purpose" value="general">
+                                General Inquiry
+                            </label>
+
+                            <label>
+                                <input type="radio" id="reservation" name="purpose"
+                                  value="reservation">
+                                Reservation Question
+                            </label>
+
+                            <label>
+                                <input type="radio" id="suggestion" name="purpose"
+                                  value="suggestion">
+                                Website Suggestion
+                            </label>
+                        </div>
+
+                    </div>
+
+                    <label for="message">Message</label>
                     <textarea id="message" name="message" rows="5" required></textarea>
 
-                    <label>
-                        <input type="checkbox" name="subscribe">
-                        Please subscribe me to the monthly newsletter
-                    </label>
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
 
                     <button type="submit">Get in Touch!</button>
 
@@ -92,7 +106,7 @@
                 </figure>
 
                 <figure>
-                    <img src="images/sarah.jpg" alt="Adventure rafting instructor">
+                    <img src="images/sarah1.jpg" alt="Adventure rafting instructor">
                     <figcaption>Sarah – Instructor</figcaption>
                 </figure>
 
