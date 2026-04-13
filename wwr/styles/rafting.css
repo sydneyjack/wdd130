@@ -7,6 +7,12 @@
     box-sizing: border-box;
 }
 
+.hero h1,
+.hero .hero-text,
+.hero .btn {
+    z-index: 1;
+}
+
 /* VARIABLES */
 :root {
     --primary-color: #1b4965;
@@ -76,22 +82,6 @@ nav a {
     background-color: rgba(0, 0, 0, 0.6);
     /* ✅ FIXED visibility */
     padding: 10px;
-}
-
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background-color: var(--secondary-color);
-    padding: 10px;
-    max-width: 400px;
-    color: var(--text-color);
-}
-
-.hero article img {
-    float: right;
-    width: 100px;
-    margin-left: 10px;
 }
 
 /* HISTORY */
@@ -288,22 +278,34 @@ footer {
 
 .hero-text {
     position: absolute;
-    top: 45%;
+    top: 48%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+    font-size: 1.2rem;
+    max-width: 500px;
+    text-align: center;
 }
 
 .btn {
+    background: var(--secondary-color);
+    padding: 12px 24px;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: var(--accent-color);
+}
+
+.hero .btn {
     position: absolute;
     top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    color: black;
-    border-radius: 5px;
 }
 
 /* FEATURES */
@@ -318,6 +320,10 @@ footer {
 .feature img {
     width: 150px;
     border-radius: 10px;
+}
+
+.feature h3 {
+    margin-top: 10px;
 }
 
 /* SPLIT SECTION */
@@ -363,7 +369,11 @@ footer {
 /* CTA */
 .cta {
     text-align: center;
-    padding: 20px;
+    padding: 30px 10px;
+}
+
+.cta h2 {
+    margin-bottom: 15px;
 }
 
 /* TRIPS GRID */
@@ -406,4 +416,8 @@ td {
 th {
     background-color: var(--primary-color);
     color: white;
+}
+
+section {
+    margin-bottom: 20px;
 }
