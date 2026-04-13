@@ -265,3 +265,145 @@ footer {
 .purpose-options input[type="radio"] {
     margin-right: 6px;
 }
+
+/* HERO */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 3rem;
+}
+
+.hero-text {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.btn {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+}
+
+/* FEATURES */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    text-align: center;
+}
+
+.feature img {
+    width: 150px;
+    border-radius: 10px;
+}
+
+/* SPLIT SECTION */
+.split-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    padding: 40px;
+    background: #d2b48c;
+}
+
+.split-image img {
+    width: 100%;
+}
+
+.split-text {
+    background: #5a6f63;
+    color: white;
+    padding: 20px;
+    align-self: center;
+}
+
+/* NEWSLETTER */
+.newsletter {
+    text-align: center;
+    padding: 40px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+    gap: 10px;
+}
+
+/* CENTER TEXT */
+.center {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* CTA */
+.cta {
+    text-align: center;
+    padding: 20px;
+}
+
+/* TRIPS GRID */
+.trips-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+}
+
+.trip {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.trip img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* TABLE */
+.trip-table {
+    padding: 40px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+}
