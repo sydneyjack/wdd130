@@ -421,3 +421,7 @@ th {
 section {
     margin-bottom: 20px;
 }
+
+.cta .btn {
+    margin-top: 10px;
+}
